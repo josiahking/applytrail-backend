@@ -4,7 +4,10 @@
   "description": "Job application trail backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "@prisma/client": "^6.16.2",
     "cors": "^2.8.5",
@@ -21,8 +24,10 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
+    "@types/node": "^24.5.2",
     "@types/supertest": "^6.0.3",
     "jest": "^30.2.0",
     "nodemon": "^3.1.10",
@@ -30,6 +35,7 @@
     "supertest": "^7.1.4",
     "ts-jest": "^29.4.4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.2"
   }
 }
