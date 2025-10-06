@@ -14,16 +14,18 @@
     "url": "git@personal.github.com:josiahking/applytrail-backend.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Josiah Gerald",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@prisma/client": "^6.16.2",
+    "@prisma/client": "^6.16.3",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
