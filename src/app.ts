@@ -1,13 +1,14 @@
-import express from "express";
-import cors from "cors";
+import express from 'express';
+import cors from 'cors';
+import 'reflect-metadata';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to ApplyTrail API 🚀" });
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to ApplyTrail API 🚀' });
 });
 
 export default app;
